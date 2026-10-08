@@ -230,7 +230,7 @@
             res.sendFile(
                 path.join(
                     __dirname,
-                    "ghh.html"
+                    "index.html"
                 )
             );
 
@@ -255,7 +255,7 @@
                     Page not found.
                 </p>
 
-                <a href="/ghh.html">
+                <a href="/index.html">
                     Return Home
                 </a>
 

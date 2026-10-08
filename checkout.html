@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SEON — Checkout</title>
+
+    <link
+        rel="stylesheet"
+        href="ghh.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="inner-pages.css"
+    >
+
+</head>
+
+
+<body>
+
+<main class="checkout-page">
+
+    <div class="checkout-heading">
+
+        <p class="section-tag">
+
+            <span></span>
+
+            SEON CHECKOUT
+
+        </p>
+
+        <h1>
+            Complete
+            <em>Your Order.</em>
+        </h1>
+
+    </div>
+
+
+    <form
+        id="seon-checkout-form"
+        class="checkout-form"
+    >
+
+        <div class="checkout-section">
+
+            <h2>
+                Delivery Details
+            </h2>
+
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required
+            >
+
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+
+
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+
+            <textarea
+                name="address"
+                placeholder="Complete Delivery Address"
+                required
+            ></textarea>
+
+        </div>
+
+
+        <div class="checkout-section">
+
+            <h2>
+                Payment Method
+            </h2>
+
+
+            <label class="payment-option">
+
+                <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="online"
+                    checked
+                >
+
+                <span>
+                    Online Payment
+                </span>
+
+            </label>
+
+
+            <label class="payment-option">
+
+                <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="card"
+                >
+
+                <span>
+                    Debit / Credit Card
+                </span>
+
+            </label>
+
+
+            <label class="payment-option">
+
+                <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="cod"
+                >
+
+                <span>
+                    Cash On Delivery
+                </span>
+
+            </label>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="button-primary checkout-submit"
+        >
+            PLACE ORDER
+        </button>
+
+    </form>
+
+</main>
+
+
+<script src="ghh.js"></script>
+
+</body>
+
+</html>

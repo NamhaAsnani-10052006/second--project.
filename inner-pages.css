@@ -1,0 +1,4429 @@
+/* =====================================================
+   SEON INNER PAGES
+   ===================================================== */
+
+.inner-page,
+.signature-page,
+.checkout-page {
+
+    min-height:100vh;
+
+    padding:
+        150px 7% 100px;
+
+}
+
+
+.inner-hero {
+
+    max-width:900px;
+
+    margin:
+        0 auto 80px;
+
+    text-align:center;
+
+}
+
+
+.inner-hero h1,
+.checkout-heading h1 {
+
+    margin:
+        20px 0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px, 8vw, 105px);
+
+    font-weight:500;
+
+    line-height:.9;
+
+}
+
+
+.inner-hero h1 em,
+.checkout-heading h1 em {
+
+    display:block;
+
+    color:
+        #b14dff;
+
+}
+
+
+.inner-hero > p:last-child {
+
+    color:
+        rgba(255,255,255,.65);
+
+    max-width:
+        550px;
+
+    margin:
+        25px auto;
+
+}
+
+
+/* =====================================================
+   INNER PRODUCTS
+   ===================================================== */
+
+.inner-products {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+}
+
+
+/* =====================================================
+   SIGNATURE
+   ===================================================== */
+
+.signature-page {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+}
+
+
+.signature-product {
+
+    width:
+        min(1200px,100%);
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        80px;
+
+    align-items:
+        center;
+
+}
+
+
+.signature-visual {
+
+    min-height:
+        600px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(177,77,255,.25),
+            transparent 60%
+        );
+
+}
+
+
+.signature-bottle {
+
+    width:
+        280px;
+
+    height:
+        370px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            #b14dff,
+            #48105d,
+            #100611
+        );
+
+    box-shadow:
+        0 40px 100px
+        rgba(177,77,255,.35);
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    color:white;
+
+}
+
+
+.signature-bottle span {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        38px;
+
+    letter-spacing:
+        7px;
+
+}
+
+
+.signature-bottle strong {
+
+    margin-top:
+        10px;
+
+    letter-spacing:
+        4px;
+
+    font-size:
+        11px;
+
+}
+
+
+.signature-info h1 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px,7vw,100px);
+
+    line-height:
+        .85;
+
+    font-weight:
+        500;
+
+}
+
+
+.signature-info h1 em {
+
+    color:
+        #b14dff;
+
+}
+
+
+.signature-description {
+
+    margin:
+        30px 0;
+
+    color:
+        rgba(255,255,255,.65);
+
+    max-width:
+        550px;
+
+    line-height:
+        1.8;
+
+}
+
+
+.signature-price {
+
+    font-size:
+        30px;
+
+    color:
+        #d7a24f;
+
+    margin:
+        30px 0;
+
+}
+
+
+.signature-price small {
+
+    margin-left:
+        15px;
+
+    font-size:
+        10px;
+
+    color:
+        rgba(255,255,255,.55);
+
+}
+
+
+.signature-notes {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        15px;
+
+    margin:
+        30px 0;
+
+}
+
+
+.signature-notes div {
+
+    padding:
+        18px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+}
+
+
+.signature-notes strong {
+
+    display:block;
+
+    font-size:
+        9px;
+
+    color:
+        #b14dff;
+
+    letter-spacing:
+        2px;
+
+    margin-bottom:
+        7px;
+
+}
+
+
+.signature-add {
+
+    width:
+        100%;
+
+    min-height:
+        55px;
+
+    border:
+        0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #b14dff
+        );
+
+    color:white;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        2px;
+
+    cursor:pointer;
+
+}
+
+
+.signature-add:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =====================================================
+   CART
+   ===================================================== */
+
+.cart-layout {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 350px;
+
+    gap:
+        40px;
+
+}
+
+
+.seon-cart-items {
+
+    display:
+        grid;
+
+    gap:
+        15px;
+
+}
+
+
+.seon-cart-item {
+
+    padding:
+        25px;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+}
+
+
+.seon-cart-info {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+}
+
+
+.seon-cart-number {
+
+    color:
+        #b14dff;
+
+    font-size:
+        11px;
+
+}
+
+
+.seon-cart-info h3 {
+
+    margin:
+        0 0 6px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        28px;
+
+}
+
+
+.seon-cart-info p {
+
+    color:
+        rgba(255,255,255,.5);
+
+    font-size:
+        11px;
+
+}
+
+
+.seon-cart-info strong {
+
+    display:block;
+
+    margin-top:
+        10px;
+
+    color:
+        #d7a24f;
+
+}
+
+
+.seon-cart-controls {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+}
+
+
+.seon-cart-controls button {
+
+    min-width:
+        35px;
+
+    min-height:
+        35px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    background:
+        transparent;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+.seon-cart-controls .seon-remove {
+
+    width:
+        auto;
+
+    padding:
+        0 12px;
+
+    font-size:
+        9px;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.cart-summary {
+
+    padding:
+        30px;
+
+    height:
+        fit-content;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+    position:
+        sticky;
+
+    top:
+        120px;
+
+}
+
+
+.cart-summary p {
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        3px;
+
+    color:
+        #b14dff;
+
+}
+
+
+.cart-summary h2 {
+
+    font-size:
+        42px;
+
+    margin:
+        20px 0 30px;
+
+    color:
+        #d7a24f;
+
+}
+
+
+.button-primary,
+.button-outline {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        52px;
+
+    padding:
+        0 24px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.button-primary {
+
+    width:
+        100%;
+
+    border:
+        0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #b14dff
+        );
+
+    color:white;
+
+}
+
+
+.button-outline {
+
+    margin-top:
+        12px;
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    color:white;
+
+}
+
+
+.button-primary:hover,
+.button-outline:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =====================================================
+   CHECKOUT
+   ===================================================== */
+
+.checkout-page {
+
+    max-width:
+        1100px;
+
+    margin:
+        auto;
+
+}
+
+
+.checkout-heading {
+
+    text-align:
+        center;
+
+    margin-bottom:
+        60px;
+
+}
+
+
+.checkout-form {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        30px;
+
+}
+
+
+.checkout-section {
+
+    padding:
+        30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+}
+
+
+.checkout-section h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        32px;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.checkout-section input,
+.checkout-section textarea {
+
+    width:
+        100%;
+
+    margin-bottom:
+        15px;
+
+    padding:
+        16px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    background:
+        rgba(255,255,255,.04);
+
+    color:white;
+
+    outline:none;
+
+}
+
+
+.checkout-section textarea {
+
+    min-height:
+        130px;
+
+    resize:
+        vertical;
+
+}
+
+
+.payment-option {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    margin-bottom:
+        10px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    cursor:pointer;
+
+}
+
+
+.payment-option.active {
+
+    border-color:
+        #b14dff;
+
+    background:
+        rgba(177,77,255,.08);
+
+}
+
+
+.checkout-submit {
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .signature-product,
+    .cart-layout,
+    .checkout-form {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .signature-visual {
+
+        min-height:
+            450px;
+
+    }
+
+
+    .seon-cart-item {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            20px;
+
+    }
+
+
+    .cart-summary {
+
+        position:
+            static;
+
+    }
+
+}   
+
+
+/* =====================================================
+   SEON — OUR STORY PAGE
+   EXACT CSS FOR story.html
+   ===================================================== */
+
+.inner-page-hero.story-page {
+
+    min-height: 720px;
+
+    padding:
+        150px 7% 100px;
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.inner-page-hero.story-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+
+    height: 600px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(177,77,255,.20),
+            transparent 68%
+        );
+
+    filter: blur(10px);
+
+    pointer-events: none;
+
+}
+
+
+.inner-page-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+.inner-page-content .section-tag {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.inner-page-content .section-tag span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.inner-page-content h1 {
+
+    margin: 25px 0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px, 8vw, 105px);
+
+    font-weight: 500;
+
+    line-height: .88;
+
+}
+
+
+.inner-page-content h1 em {
+
+    display: block;
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+.inner-page-description {
+
+    max-width: 570px;
+
+    margin: 30px auto 0;
+
+    color:
+        rgba(255,255,255,.62);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   STORY INNER SECTION
+   ===================================================== */
+
+.story-inner {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding:
+        100px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+
+.story-inner-visual {
+
+    min-height: 600px;
+
+    position: relative;
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+
+.story-inner-circle {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(177,77,255,.28),
+            rgba(72,16,93,.08),
+            transparent 70%
+        );
+
+    animation:
+        storyPulse 5s ease-in-out infinite;
+
+}
+
+
+.story-inner-card {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 330px;
+
+    height: 450px;
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    background:
+        linear-gradient(
+            145deg,
+            #32103f,
+            #100611
+        );
+
+    box-shadow:
+        0 40px 100px
+        rgba(177,77,255,.25);
+
+    transform: rotate(-4deg);
+
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+
+}
+
+
+.story-inner-card:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-10px);
+
+    box-shadow:
+        0 50px 120px
+        rgba(177,77,255,.35);
+
+}
+
+
+.story-inner-card span {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 38px;
+
+    letter-spacing: 8px;
+
+}
+
+
+.story-inner-card strong {
+
+    max-width: 210px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 43px;
+
+    line-height: .9;
+
+    font-weight: 500;
+
+}
+
+
+.story-inner-card small {
+
+    color: #d7a24f;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+}
+
+
+@keyframes storyPulse {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+        opacity: .8;
+
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* =====================================================
+   STORY CONTENT
+   ===================================================== */
+
+.story-inner-content {
+
+    max-width: 570px;
+
+}
+
+
+.story-inner-content .section-tag {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.story-inner-content .section-tag span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.story-inner-content h2 {
+
+    margin-bottom: 30px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(50px, 6vw, 82px);
+
+    line-height: .88;
+
+    font-weight: 500;
+
+}
+
+
+.story-inner-content h2 em {
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+.story-inner-content > p:not(.section-tag) {
+
+    margin-bottom: 20px;
+
+    color:
+        rgba(255,255,255,.60);
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   STORY PHILOSOPHY
+   ===================================================== */
+
+.story-philosophy {
+
+    max-width: 1250px;
+
+    margin: 40px auto 0;
+
+    padding:
+        100px 7%;
+
+    text-align: center;
+
+}
+
+
+.story-philosophy .section-tag.center {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.story-philosophy .section-tag.center span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.story-philosophy > h2 {
+
+    margin:
+        25px auto 60px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(50px, 6vw, 80px);
+
+    line-height: .9;
+
+    font-weight: 500;
+
+}
+
+
+.story-philosophy > h2 em {
+
+    color: #b14dff;
+
+    font-style: normal;
+
+    display: block;
+
+}
+
+
+/* PHILOSOPHY GRID */
+
+.philosophy-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    text-align: left;
+
+}
+
+
+.philosophy-grid article {
+
+    min-height: 270px;
+
+    padding: 35px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        background .4s ease;
+
+}
+
+
+.philosophy-grid article:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(177,77,255,.45);
+
+    background:
+        rgba(177,77,255,.05);
+
+}
+
+
+.philosophy-grid article i {
+
+    margin-bottom: 30px;
+
+    color: #d7a24f;
+
+    font-size: 22px;
+
+}
+
+
+.philosophy-grid article h3 {
+
+    margin-bottom: 15px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+}
+
+
+.philosophy-grid article p {
+
+    max-width: 300px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   STORY / REVIEWS CTA
+   ===================================================== */
+
+.inner-page-cta {
+
+    max-width: 1000px;
+
+    margin:
+        50px auto 0;
+
+    padding:
+        100px 7%;
+
+    text-align: center;
+
+}
+
+
+.inner-page-cta .section-tag.center {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.inner-page-cta .section-tag.center span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.inner-page-cta h2 {
+
+    margin:
+        25px 0 35px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(50px, 7vw, 85px);
+
+    line-height: .88;
+
+    font-weight: 500;
+
+}
+
+
+.inner-page-cta h2 em {
+
+    display: block;
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+.inner-page-cta .button-primary {
+
+    max-width: 280px;
+
+    margin: auto;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   SEON — REVIEWS PAGE
+   EXACT CSS FOR reviews.html
+   ===================================================== */
+
+.inner-page-hero.reviews-page {
+
+    min-height: 650px;
+
+    padding:
+        150px 7% 100px;
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.inner-page-hero.reviews-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+
+    height: 600px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(177,77,255,.20),
+            transparent 68%
+        );
+
+    pointer-events: none;
+
+}
+
+
+.inner-page-hero.reviews-page
+.inner-page-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 900px;
+
+}
+
+
+.inner-page-hero.reviews-page
+.inner-page-content h1 {
+
+    margin: 25px 0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px, 8vw, 105px);
+
+    font-weight: 500;
+
+    line-height: .88;
+
+}
+
+
+.inner-page-hero.reviews-page
+.inner-page-content h1 em {
+
+    display: block;
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+.inner-page-hero.reviews-page
+.inner-page-description {
+
+    max-width: 570px;
+
+    margin: 30px auto;
+
+    color:
+        rgba(255,255,255,.62);
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   REVIEWS INNER
+   ===================================================== */
+
+.reviews-inner {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding:
+        80px 7% 100px;
+
+    text-align: center;
+
+}
+
+
+.reviews-inner .section-tag.center {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.reviews-inner .section-tag.center span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.reviews-inner > h2 {
+
+    margin:
+        25px 0 60px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(50px, 6vw, 80px);
+
+    font-weight: 500;
+
+    line-height: .9;
+
+}
+
+
+.reviews-inner > h2 em {
+
+    display: block;
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+/* =====================================================
+   REVIEW GRID
+   ===================================================== */
+
+.review-grid-inner {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    text-align: left;
+
+}
+
+
+.review-card {
+
+    min-height: 320px;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        box-shadow .4s ease;
+
+}
+
+
+.review-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(177,77,255,.45);
+
+    box-shadow:
+        0 30px 80px
+        rgba(125,44,255,.12);
+
+}
+
+
+.review-stars {
+
+    color: #d7a24f;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.review-card > p {
+
+    margin:
+        25px 0;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 24px;
+
+    line-height: 1.3;
+
+}
+
+
+.review-person {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+
+.review-person > span {
+
+    width: 45px;
+
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7d2cff,
+            #32103f
+        );
+
+    color: white;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 21px;
+
+}
+
+
+.review-person strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: white;
+
+    font-size: 11px;
+
+}
+
+
+.review-person small {
+
+    color:
+        rgba(255,255,255,.42);
+
+    font-size: 9px;
+
+    letter-spacing: .5px;
+
+}
+
+
+/* =====================================================
+   STORY + REVIEWS MOBILE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .story-inner {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding-top: 70px;
+
+    }
+
+
+    .story-inner-visual {
+
+        min-height: 500px;
+
+    }
+
+
+    .philosophy-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .review-grid-inner {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .inner-page-hero.story-page,
+    .inner-page-hero.reviews-page {
+
+        min-height: 600px;
+
+        padding:
+            125px 20px 70px;
+
+    }
+
+
+    .inner-page-content h1,
+    .inner-page-hero.reviews-page
+    .inner-page-content h1 {
+
+        font-size: 58px;
+
+    }
+
+
+    .story-inner {
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .story-inner-visual {
+
+        min-height: 420px;
+
+    }
+
+
+    .story-inner-circle {
+
+        width: 340px;
+
+        height: 340px;
+
+    }
+
+
+    .story-inner-card {
+
+        width: 260px;
+
+        height: 370px;
+
+        padding: 30px;
+
+    }
+
+
+    .story-inner-card strong {
+
+        font-size: 34px;
+
+    }
+
+
+    .story-inner-content h2 {
+
+        font-size: 54px;
+
+    }
+
+
+    .story-philosophy {
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .story-philosophy > h2 {
+
+        font-size: 53px;
+
+    }
+
+
+    .philosophy-grid article {
+
+        min-height: auto;
+
+        padding: 28px;
+
+    }
+
+
+    .inner-page-cta {
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .inner-page-cta h2 {
+
+        font-size: 54px;
+
+    }
+
+
+    .reviews-inner {
+
+        padding:
+            60px 20px 70px;
+
+    }
+
+
+    .reviews-inner > h2 {
+
+        font-size: 54px;
+
+    }
+
+
+    .review-grid-inner {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .review-card {
+
+        min-height: 290px;
+
+        padding: 28px;
+
+    }
+
+
+    .review-card > p {
+
+        font-size: 22px;
+
+    }
+
+}
+
+/* =====================================================
+   SEON — PRODUCT PAGE
+   ===================================================== */
+
+.product-page {
+
+    min-height: 100vh;
+
+    padding:
+        150px 7% 100px;
+
+}
+
+
+.product-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+/* =====================================================
+   PRODUCT GALLERY
+   ===================================================== */
+
+.product-gallery {
+
+    width: 100%;
+
+}
+
+
+.product-main-image {
+
+    min-height: 620px;
+
+    position: relative;
+
+    display: grid;
+
+    place-items: center;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(177,77,255,.16),
+            rgba(255,255,255,.02) 60%,
+            transparent 80%
+        );
+
+}
+
+
+.product-main-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 15%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(177,77,255,.18),
+            transparent 65%
+        );
+
+    filter: blur(30px);
+
+    pointer-events: none;
+
+}
+
+
+.product-main-image img {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(75%, 470px);
+
+    max-height: 560px;
+
+    object-fit: contain;
+
+    transition:
+        transform .5s ease;
+
+}
+
+
+.product-main-image:hover img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+.product-badge {
+
+    position: absolute;
+
+    top: 25px;
+
+    left: 25px;
+
+    z-index: 5;
+
+    padding:
+        8px 14px;
+
+    border:
+        1px solid
+        rgba(177,77,255,.45);
+
+    background:
+        rgba(177,77,255,.08);
+
+    color: #b14dff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.product-thumbnails {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+
+}
+
+
+.product-thumb {
+
+    height: 110px;
+
+    padding: 8px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+        rgba(255,255,255,.03);
+
+    cursor: pointer;
+
+    transition:
+        border-color .3s ease,
+        transform .3s ease;
+
+}
+
+
+.product-thumb:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(177,77,255,.45);
+
+}
+
+
+.product-thumb.active {
+
+    border-color:
+        #b14dff;
+
+}
+
+
+.product-thumb img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+/* =====================================================
+   PRODUCT DETAILS
+   ===================================================== */
+
+.product-details {
+
+    max-width: 560px;
+
+}
+
+
+.product-details .section-tag {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.product-details .section-tag span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.product-details h1 {
+
+    margin:
+        22px 0 15px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px, 6vw, 90px);
+
+    line-height: .85;
+
+    font-weight: 500;
+
+}
+
+
+.product-rating {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.product-rating span {
+
+    color: #d7a24f;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.product-rating a {
+
+    color:
+        rgba(255,255,255,.5);
+
+    font-size: 11px;
+
+    text-decoration: underline;
+
+}
+
+
+.product-price {
+
+    margin:
+        20px 0;
+
+    color: #d7a24f;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+}
+
+
+.product-description {
+
+    max-width: 500px;
+
+    margin-bottom: 35px;
+
+    color:
+        rgba(255,255,255,.6);
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   PRODUCT OPTIONS
+   ===================================================== */
+
+.product-option {
+
+    margin-bottom: 25px;
+
+}
+
+
+.option-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+
+}
+
+
+.option-heading span {
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.option-heading strong {
+
+    color: white;
+
+    font-size: 11px;
+
+}
+
+
+.size-options {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.size-option {
+
+    min-width: 100px;
+
+    min-height: 45px;
+
+    padding:
+        0 18px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    background:
+        rgba(255,255,255,.03);
+
+    color:
+        rgba(255,255,255,.7);
+
+    cursor: pointer;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.size-option:hover {
+
+    border-color:
+        rgba(177,77,255,.5);
+
+}
+
+
+.size-option.active {
+
+    border-color:
+        #b14dff;
+
+    background:
+        rgba(177,77,255,.1);
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   QUANTITY
+   ===================================================== */
+
+.quantity-control {
+
+    width: 145px;
+
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+}
+
+
+.quantity-control button {
+
+    width: 45px;
+
+    height: 46px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+}
+
+
+.quantity-control button:hover {
+
+    color: #b14dff;
+
+}
+
+
+.quantity-control span {
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   PRODUCT BUTTONS
+   ===================================================== */
+
+.product-add-cart {
+
+    min-height: 58px;
+
+    margin-top: 10px;
+
+}
+
+
+.product-buy-now {
+
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 12px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    letter-spacing: 2px;
+
+    font-size: 11px;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.product-buy-now:hover {
+
+    border-color:
+        #7c14cc;
+
+    background:
+        rgba(177,77,255,.06);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =====================================================
+   PRODUCT BENEFITS
+   ===================================================== */
+
+.product-benefits {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+}
+
+
+.product-benefits  div {
+
+    padding:
+        18px 10px;
+
+    text-align: center;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+        rgba(255,255,255,.025);
+
+}
+
+
+.product-benefits i {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #d7a24f;
+
+    font-size: 16px;
+
+}
+
+
+.product-benefits span {
+
+    color:
+        rgba(255,255,255,.5);
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =====================================================
+   PRODUCT INFORMATION
+   ===================================================== */
+
+.product-information {
+
+    max-width: 1250px;
+
+    margin:
+        100px auto 0;
+
+    padding:
+        80px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr 1fr;
+
+    gap: 25px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.08);
+
+}
+
+
+.product-info-block {
+
+    padding: 30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+        rgba(255,255,255,.025);
+
+}
+
+
+.product-info-block h2 {
+
+    margin-bottom: 20px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+}
+
+
+.product-info-block p {
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+}
+
+
+.fragrance-notes {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.fragrance-notes span {
+
+    padding:
+        10px 14px;
+
+    border:
+        1px solid
+        rgba(177,77,255,.25);
+
+    color:
+        rgba(255,255,255,.7);
+
+    font-size: 10px;
+
+}
+
+
+.product-info-block ul {
+
+    padding-left: 18px;
+
+}
+
+
+.product-info-block li {
+
+    margin-bottom: 12px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 11px;
+
+}
+
+
+
+/* =========================================================
+   SEON COLLECTION — FINAL PRODUCT GRID FIX
+   ========================================================= */
+
+/* Collection products area */
+.inner-page .inner-products {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* FOUR PRODUCTS IN ONE ROW */
+.inner-page .inner-products .product-grid {
+    width: 100%;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+/* PRODUCT CARD */
+.inner-page .inner-products .product-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    height: auto;
+    min-height: 455px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,255,255,.16);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.035),
+            rgba(255,255,255,.015)
+        );
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+/* CARD HOVER */
+.inner-page .inner-products .product-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(177,77,255,.55);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35),
+        0 0 35px rgba(177,77,255,.10);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE AREA
+   ========================================================= */
+
+.inner-page .inner-products .product-picture {
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+    min-height: 300px;
+
+    flex: 0 0 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(120,50,150,.55),
+            rgba(15,7,20,.95) 72%
+        );
+}
+
+/* REAL IMAGE */
+.inner-page .inner-products .product-picture img {
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    transform: scale(1);
+    transition: transform .5s ease;
+}
+
+/* IMAGE HOVER */
+.inner-page .inner-products .product-card:hover
+.product-picture img {
+    transform: scale(1.045);
+}
+
+
+/* =========================================================
+   IMAGE POSITION CONTROL
+   ========================================================= */
+
+.inner-page .inner-products
+.product-picture img[src*="nh.jpg2"] {
+    object-fit: contain;
+    object-position: center;
+}
+
+.inner-page .inner-products
+.product-picture img[src*="nh.jpg3"] {
+    object-fit: contain;
+    object-position: center;
+}
+
+.inner-page .inner-products
+.product-picture img[src*="nh.jpg7"] {
+    object-fit: contain;
+    object-position: center;
+}
+
+.inner-page .inner-products
+.product-picture img[src*="nh.jpg.jpeg"] {
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* =========================================================
+   BADGE
+   ========================================================= */
+
+.inner-page .inner-products .badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 10;
+
+    padding: 7px 10px;
+
+    background: #d7a24f;
+    color: #160d08;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEART
+   ========================================================= */
+
+.inner-page .inner-products .product-heart {
+    position: absolute;
+
+    top: 13px;
+    right: 13px;
+
+    z-index: 20;
+
+    width: 36px;
+    height: 36px;
+
+    display: grid;
+    place-items: center;
+
+    padding: 0;
+
+    border:
+        1px solid
+        rgba(255,255,255,.20);
+
+    border-radius: 50%;
+
+    background:
+        rgba(8,4,12,.60);
+
+    color: white;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.inner-page .inner-products .product-heart:hover {
+    transform: scale(1.12);
+
+    background:
+        rgba(177,77,255,.35);
+
+    color: #d9a7ff;
+}
+
+.inner-page .inner-products .product-heart i {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+   ========================================================= */
+
+.inner-page .inner-products .product-details {
+    width: 100%;
+
+    min-height: 155px;
+
+    flex: 1;
+
+    padding: 22px 20px 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* EAU DE PARFUM */
+.inner-page .inner-products .product-details > p {
+    margin: 0 0 8px;
+
+    color:
+        rgba(255,255,255,.50);
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* PRODUCT NAME */
+.inner-page .inner-products .product-details h3 {
+    margin: 0 0 8px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 27px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    color: white;
+}
+
+
+/* NOTES */
+.inner-page .inner-products .product-details > span {
+    display: block;
+
+    margin-bottom: auto;
+
+    color:
+        rgba(255,255,255,.48);
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* PRICE + PLUS BUTTON ROW */
+.inner-page .inner-products .product-details > div {
+    width: 100%;
+
+    margin-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* PRICE */
+.inner-page .inner-products .product-details strong {
+    color: #d7a24f;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* PLUS BUTTON */
+.inner-page .inner-products .product-details button {
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+
+    padding: 0;
+
+    border: 1px solid
+        rgba(255,255,255,.20);
+
+    background:
+        linear-gradient(
+            135deg,
+            #7d2cff,
+            #b14dff
+        );
+
+    color: white;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.inner-page .inner-products .product-details button:hover {
+    transform: scale(1.10);
+
+    box-shadow:
+        0 8px 25px
+        rgba(177,77,255,.35);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .inner-page .inner-products .product-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .inner-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .inner-page .inner-products .product-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .inner-page .inner-products .product-picture {
+        height: 320px;
+        min-height: 320px;
+
+        flex-basis: 320px;
+    }
+
+    .inner-page .inner-products .product-card {
+        min-height: 475px;
+    }
+
+}
+
+    
+      
+
+
+/* HEART HOVER */
+
+.product-heart:hover {
+    transform: scale(1.12);
+
+    background: rgba(177, 77, 255, 0.35);
+
+    color: #d9a7ff;
+}
+
+
+/* HEART ICON */
+
+.product-heart i {
+    font-size: 16px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* ACTIVE HEART */
+
+.product-heart[aria-pressed="true"] {
+    color: #d9a7ff;
+
+    background:
+        rgba(177, 77, 255, 0.28);
+}
+
+
+.product-heart[aria-pressed="true"] i {
+  
+    transform: scale(1.08);
+}
+
+
+
+
+/* =====================================================
+   SEON — ACCOUNT PAGE
+   ===================================================== */
+
+.account-page {
+
+    min-height: 100vh;
+
+    padding:
+        150px 7% 100px;
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+
+.account-container {
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 480px;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+
+.account-intro {
+
+    max-width: 600px;
+
+}
+
+
+.account-intro .section-tag {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.account-intro .section-tag span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.account-intro h1 {
+
+    margin:
+        25px 0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px, 7vw, 95px);
+
+    line-height: .86;
+
+    font-weight: 500;
+
+}
+
+
+.account-intro h1 em {
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+.account-intro > p:last-child {
+
+    max-width: 500px;
+
+    color:
+        rgba(255,255,255,.58);
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   ACCOUNT CARD
+   ===================================================== */
+
+.account-card {
+
+    padding: 40px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    background:
+        rgba(255,255,255,.035);
+
+    box-shadow:
+        0 35px 100px
+        rgba(0,0,0,.25);
+
+}
+
+
+.account-card-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+.account-card-header h2 {
+
+    margin-bottom: 8px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+}
+
+
+.account-card-header p {
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size: 11px;
+
+}
+
+
+/* =====================================================
+   ACCOUNT FORM
+   ===================================================== */
+
+.account-form {
+
+    display: grid;
+
+    gap: 20px;
+
+}
+
+
+.form-group {
+
+    display: grid;
+
+    gap: 9px;
+
+}
+
+
+.form-group label {
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    min-height: 52px;
+
+    padding:
+        0 16px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    outline: none;
+
+    background:
+        rgba(255,255,255,.035);
+
+    color: white;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    transition:
+        border-color .3s ease;
+
+}
+
+
+.form-group input:focus {
+
+    border-color:
+        rgba(177,77,255,.7);
+
+}
+
+
+.form-group input::placeholder {
+
+    color:
+        rgba(255,255,255,.28);
+
+}
+
+
+/* PASSWORD */
+
+.password-field {
+
+    position: relative;
+
+}
+
+
+.password-field input {
+
+    padding-right: 55px;
+
+}
+
+
+.password-field button {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 52px;
+
+    height: 52px;
+
+    border: 0;
+
+    background: transparent;
+
+    color:
+        rgba(255,255,255,.45);
+
+    cursor: pointer;
+
+}
+
+
+.password-field button:hover {
+
+    color: #b14dff;
+
+}
+
+
+/* =====================================================
+   ACCOUNT OPTIONS
+   ===================================================== */
+
+.account-options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: -5px;
+
+}
+
+
+.account-options label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size: 10px;
+
+}
+
+
+.account-options input {
+
+    accent-color: #b14dff;
+
+}
+
+
+.account-options a {
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 10px;
+
+    text-decoration: underline;
+
+}
+
+
+.account-options a:hover {
+
+    color: #b14dff;
+
+}
+
+
+.account-submit {
+
+    min-height: 55px;
+
+    gap: 10px;
+
+}
+
+
+/* =====================================================
+   ACCOUNT DIVIDER
+   ===================================================== */
+
+.account-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin:
+        30px 0 20px;
+
+}
+
+
+.account-divider::before,
+.account-divider::after {
+
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background:
+        rgba(255,255,255,.1);
+
+}
+
+
+.account-divider span {
+
+    color:
+        rgba(255,255,255,.3);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.account-register {
+
+    text-align: center;
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size: 10px;
+
+}
+
+
+.account-register a {
+
+    margin-left: 5px;
+
+    color: #b14dff;
+
+    text-decoration: none;
+
+}
+
+
+.account-register a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   SEON — CONTACT PAGE
+   ===================================================== */
+
+.contact-page {
+
+    min-height: 100vh;
+
+    padding:
+        150px 7% 100px;
+
+}
+
+
+.contact-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.contact-intro {
+
+    max-width: 570px;
+
+}
+
+
+.contact-intro .section-tag {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #b14dff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.contact-intro .section-tag span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #d7a24f
+        );
+
+}
+
+
+.contact-intro h1 {
+
+    margin:
+        25px 0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(55px, 7vw, 95px);
+
+    line-height: .86;
+
+    font-weight: 500;
+
+}
+
+
+.contact-intro h1 em {
+
+    display: block;
+
+    color: #b14dff;
+
+    font-style: normal;
+
+}
+
+
+.contact-intro > p:not(.section-tag) {
+
+    max-width: 500px;
+
+    color:
+        rgba(255,255,255,.58);
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   CONTACT DETAILS
+   ===================================================== */
+
+.contact-details {
+
+    display: grid;
+
+    gap: 18px;
+
+    margin-top: 40px;
+
+}
+
+
+.contact-detail {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding:
+        18px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.08);
+
+}
+
+
+.contact-detail > i {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        rgba(177,77,255,.25);
+
+    color: #d7a24f;
+
+}
+
+
+.contact-detail div {
+
+    display: grid;
+
+    gap: 5px;
+
+}
+
+
+.contact-detail span {
+
+    color:
+        rgba(255,255,255,.35);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-detail a,
+.contact-detail p {
+
+    margin: 0;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    text-decoration: none;
+
+}
+
+
+.contact-detail a:hover {
+
+    color: #b14dff;
+
+}
+
+
+/* =====================================================
+   CONTACT CARD
+   ===================================================== */
+
+.contact-card {
+
+    padding: 40px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    background:
+        rgba(255,255,255,.035);
+
+    box-shadow:
+        0 35px 100px
+        rgba(0,0,0,.25);
+
+}
+
+
+.contact-card h2 {
+
+    margin-bottom: 8px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 40px;
+
+    font-weight: 500;
+
+}
+
+
+.contact-card > p {
+
+    margin-bottom: 30px;
+
+    color:
+        rgba(255,255,255,.43);
+
+    font-size: 11px;
+
+}
+
+
+.contact-form {
+
+    display: grid;
+
+    gap: 20px;
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding:
+        15px 16px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    outline: none;
+
+    background:
+        rgba(255,255,255,.035);
+
+    color: white;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 12px;
+
+    transition:
+        border-color .3s ease;
+   
+}
+
+
+.contact-form input {
+
+    min-height: 52px;
+
+}
+
+
+.contact-form textarea {
+
+    min-height: 150px;
+
+    resize: vertical;
+
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color:
+        rgba(177,77,255,.7);
+
+}
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+
+    color:
+        rgba(255,255,255,.25);
+
+}
+
+
+.contact-form .button-primary {
+
+    min-height: 55px;
+
+    gap: 10px;
+
+}
+
+
+/* =====================================================
+   PRODUCT + ACCOUNT + CONTACT
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    .product-container,
+    .account-container,
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+    }
+
+
+    .product-details,
+    .account-intro,
+    .contact-intro {
+
+        max-width: 100%;
+
+    }
+
+
+    .product-information {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .account-card,
+    .contact-card {
+
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: auto;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .product-page,
+    .account-page,
+    .contact-page {
+
+        padding:
+            125px 20px 70px;
+
+    }
+
+
+    .product-main-image {
+
+        min-height: 430px;
+
+    }
+
+
+    .product-main-image img {
+
+        width: 82%;
+
+    }
+
+
+    .product-thumb {
+
+        height: 80px;
+
+    }
+
+
+    .product-details h1,
+    .account-intro h1,
+    .contact-intro h1 {
+
+        font-size: 58px;
+
+    }
+
+
+    .product-benefits {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .product-information {
+
+        margin-top: 50px;
+
+        padding:
+            60px 20px;
+
+    }
+
+
+    .product-info-block {
+
+        padding: 25px;
+
+    }
+
+
+    .account-card,
+    .contact-card {
+
+        padding: 28px 22px;
+
+    }
+
+
+    .account-card-header h2,
+    .contact-card h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .account-options {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-detail {
+
+        align-items: flex-start;
+
+    }
+
+}
+
+
+/* =====================================================
+   SEON PRODUCT PAGE — BUTTON + QUANTITY FIX
+   ===================================================== */
+
+.product-details .quantity-control {
+    width: 145px !important;
+    min-width: 145px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid rgba(255,255,255,.20) !important;
+    border-radius: 2px !important;
+
+    overflow: hidden !important;
+}
+
+
+.product-details .quantity-control button {
+    flex: 0 0 45px !important;
+
+    width: 45px !important;
+    min-width: 45px !important;
+    height: 46px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+    color: #fff !important;
+
+    font-size: 20px !important;
+    line-height: 1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    cursor: pointer !important;
+}
+
+
+.product-details .quantity-control button:hover:not(:disabled) {
+    color: #b14dff !important;
+    background: rgba(177,77,255,.08) !important;
+}
+
+
+.product-details .quantity-control button:disabled {
+    opacity: .35 !important;
+    cursor: not-allowed !important;
+}
+
+
+.product-details .quantity-control span {
+    flex: 1 1 auto !important;
+
+    min-width: 35px !important;
+
+    text-align: center !important;
+
+    color: #fff !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}        
+
+
+/* =====================================================
+   PRODUCT ACTION BUTTONS
+   ===================================================== */
+
+.product-details #addToCart,
+.product-details #buyNow {
+
+    display: flex !important;
+
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+
+    height: 58px !important;
+    min-height: 58px !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    padding: 0 24px !important;
+
+    box-sizing: border-box !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+
+    font-family: inherit !important;
+
+    font-size: 12px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1.5px !important;
+
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+
+    cursor: pointer !important;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease !important;
+}
+
+
+/* ADD TO CART */
+
+.product-details #addToCart {
+
+    border: 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7d2cff,
+            #b14dff
+        ) !important;
+
+    color: #fff !important;
+
+    margin-top: 10px !important;
+}
+
+
+/* BUY NOW */
+
+.product-details #buyNow {
+
+    border:
+        1px solid
+        rgba(255,255,255,.22) !important;
+
+    background: transparent !important;
+
+    color: #fff !important;
+
+    margin-top: 12px !important;
+}
+
+
+/* HOVER */
+
+.product-details #addToCart:hover,
+.product-details #buyNow:hover {
+
+    transform: translateY(-2px) !important;
+}
+
+
+.product-details #buyNow:hover {
+
+    border-color: #b14dff !important;
+
+    background:
+        rgba(177,77,255,.06) !important;
+}

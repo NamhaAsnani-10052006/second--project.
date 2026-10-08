@@ -498,7 +498,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <div class="seon-mobile-links">
 
-                    <a href="ghh.html">
+                    <a href="index.html">
                         Home
                     </a>
 

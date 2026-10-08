@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         routes: {
 
-            home: "ghh.html",
+            home: "index.html",
 
             collection: "collection.html",
 
@@ -3756,7 +3756,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         routes: {
-            home: "ghh.html",
+            home: "index.html",
             collection: "collection.html",
             signature: "signature.html",
             story: "story.html",

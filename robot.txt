@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+
+sitemap:
+https://namhaasnani-10052006.github.io/second--project./sitemap.xml

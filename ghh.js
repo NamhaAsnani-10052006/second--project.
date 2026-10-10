@@ -2813,9 +2813,9 @@ document.addEventListener("DOMContentLoaded", () => {
             image: ""
         },
 
-        noir: {
-            id: "noir",
-            name: "SEON Noir",
+        Gentle: {
+            id: "Gentle",
+            name: "SEON Gentle",
             price: 399,
             category: "EAU DE PARFUM",
             notes: "Oud · Leather · Musk",
@@ -2831,9 +2831,9 @@ document.addEventListener("DOMContentLoaded", () => {
             image: ""
         },
 
-        ember: {
-            id: "ember",
-            name: "SEON Ember",
+        Blanc: {
+            id: "Blanc",
+            name: "SEON Blanc",
             price: 399,
             category: "EAU DE PARFUM",
             notes: "Spice · Amber · Wood",
@@ -2920,10 +2920,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (
-            name.includes("noir")
+            name.includes("Gentle")
         ) {
 
-            return SEON_PRODUCTS.noir;
+            return SEON_PRODUCTS.Gentle;
 
         }
 
@@ -2938,10 +2938,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (
-            name.includes("ember")
+            name.includes("Blanc")
         ) {
 
-            return SEON_PRODUCTS.ember;
+            return SEON_PRODUCTS.Blanc;
 
         }
 

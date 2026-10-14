@@ -3388,6 +3388,49 @@ function addSEONProduct(
 
 
     }
+   /* ---------- PRODUCT SCHEMA ---------- */
+
+const imageFiles = {
+    magnetic: "nh.jpg2.jpeg",
+    gentle: "nh.jpg3.jpeg",
+    aura: "nh.jpg7.jpeg",
+    blanc: "nh.jpg.jpeg"
+};
+
+const imageFile = imageFiles[product.id.toLowerCase()];
+
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": imageFile
+        ? new URL(imageFile, window.location.href).href
+        : undefined,
+    "description":
+        `${product.name} perfume. Fragrance notes: ${product.notes}.`,
+    "sku": product.id,
+    "brand": {
+        "@type": "Brand",
+        "name": "SEON"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": window.location.href,
+        "priceCurrency": "INR",
+        "price": String(product.price)
+    }
+};
+
+let schemaScript = document.getElementById("seon-product-schema");
+
+if (!schemaScript) {
+    schemaScript = document.createElement("script");
+    schemaScript.id = "seon-product-schema";
+    schemaScript.type = "application/ld+json";
+    document.head.appendChild(schemaScript);
+}
+
+schemaScript.textContent = JSON.stringify(schema);
 
     /* =====================================================
    PRODUCT PAGE — QUANTITY
